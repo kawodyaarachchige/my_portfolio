@@ -1,0 +1,95 @@
+body {
+    background-color: #5e5e5e;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #5e5e5e;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin: 0 0 10px;
+}
+#about {
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+#about h2 {
+    color: #446688;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about h2 span {
+    color: #446688;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+#about h3 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #446688;
+    color: white;
+    text-decoration: none;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #334d6b;
+}
+
+/* Add more styles for responsiveness, positioning, etc. */
