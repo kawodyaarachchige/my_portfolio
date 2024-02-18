@@ -1,4 +1,4 @@
-body {
+/*body {
     background-color: #5e5e5e;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -86,10 +86,9 @@ section h2 {
     margin-top: 2rem;
     border-radius: 0.3rem;
     transition: background-color 0.3s ease;
-}
+}*/
 
-.button:hover {
+/*.button:hover {
     background-color: #334d6b;
-}
+}*/
 
-/* Add more styles for responsiveness, positioning, etc. */
