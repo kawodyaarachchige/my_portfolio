@@ -6,11 +6,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: fixed;
 }
 .container {
     position: relative;
-    width: 100%;
-    height: 100vh;
     margin: 0 auto;
     padding: 0 20px;
 
@@ -21,7 +20,7 @@ body {
     object-fit: contain;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 25px;
+    margin-top: 28px;
     margin-bottom: 10px;
     border-radius: 50%;
 
@@ -36,7 +35,7 @@ nav {
     color: white;
     font-weight: bold;
     font-size: 14px;
-    font-family: Arial, sans-serif;
+    font-family:  sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
@@ -50,16 +49,6 @@ nav {
     left: 0;
     z-index: 999;
 }
-
- /*  !* background-color: mediumspringgreen;*!
-    padding: 20px 0;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    right: 0;
-   !* left: 0;
-    z-index: 999;*!*/
 
 nav ul {
     display: flex;
@@ -75,12 +64,91 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
+    transition: background-color 0.3s ease;
+
 }
-nav a:hover {
+nav a:hover , .active {
     background-color: #555;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     color: mediumspringgreen;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+
+}
+
+.summary h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: -40px;
+}
+.summary h3 {
+    font-size: 30px;
+    margin-bottom: -10px;
+    color: mediumspringgreen;
+
+}
+.summary p {
+    font-size: 20px;
+    margin-bottom: 0;
+
+}
+.icons{
+    position: absolute;
+    bottom:45px;
+    right: -355px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+}
+.icons img{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+.pp {
+    position: absolute;
+    bottom: 230px;
+    right: -700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#profile pic {
+    width: 350px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 50px;
+
+}
+.email {
+    position: absolute;
+    top: 780px;
+    right: -85px;
+    display: flex;
+    color: #5e5e5e;
+    justify-content: center;
+    font: normal 12px sans-serif;
+}
+section>div>h1>span {
+    color: #c7c3c3;
+    font-size: 20px;
+    margin-top: -40px;
 }
 
 
