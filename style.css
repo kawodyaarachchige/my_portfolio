@@ -131,14 +131,7 @@ nav a:hover , .active {
     display: flex;
     justify-content: center;
 }
-#profile pic {
-    width: 350px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 50px;
 
-}
 .email {
     position: absolute;
     top: 780px;
