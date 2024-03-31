@@ -198,7 +198,6 @@ section>div>h1>span {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    border-color: #c7c3c3;
     transition: background-color 0.7s ease;
 
 
@@ -210,6 +209,7 @@ section>div>h1>span {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    border: 2px solid white;
 }
 .buttonhi {
     background-color: mediumspringgreen;
@@ -229,6 +229,7 @@ section>div>h1>span {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    border: 2px solid white;
 }
 .button a{
     margin-right: 15px;
@@ -254,7 +255,40 @@ h3 {
     bottom: 0;
 
 }
+/*
+.photo-container {
+    border: 2px solid mediumspringgreen; !* Add border style *!
+    display: inline-block;
+    padding: 5px;
+}
 
+.about-photo {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 350px;
+    height: auto;
+}
+*/
+
+.about-photo {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translateY(-50%);
+    display: block;
+    width: 350px; /* Set the width of the photo */
+    height: auto; /* Allow the photo to adjust its height accordingly */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgb(0, 250, 154);  /* Add a subtle shadow effect */
+    transition: transform 0.2s ease; /* Add a smooth transition effect on hover */
+}
+
+/* Add a slight zoom effect on hover */
+.about-photo:hover {
+    transform: scale(0.95);
+}
 
 
 
