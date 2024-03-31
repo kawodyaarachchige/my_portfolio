@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: fixed;
+    position: relative;
 }
 .container {
     position: relative;
@@ -14,9 +14,12 @@ body {
     padding: 0 20px;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 #logo {
-    width: 200px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
+    width: 200px;
+    height: 150px;
     object-fit: contain;
     margin-left: 20px;
     margin-right: 20px;
@@ -101,7 +104,7 @@ nav a:hover , .active {
 .icons{
     position: absolute;
     bottom:45px;
-    right: -355px;
+    right: 5px;
    width: 100%;
    display: flex;
    justify-content: center;
@@ -139,7 +142,8 @@ nav a:hover , .active {
 .email {
     position: absolute;
     top: 780px;
-    right: -85px;
+    right: 645px;
+    bottom: 0;
     display: flex;
     color: #5e5e5e;
     justify-content: center;
@@ -150,6 +154,108 @@ section>div>h1>span {
     font-size: 20px;
     margin-top: -40px;
 }
+#about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+    margin-top: 50px;
+    background-color:black;
+    color: #c7c3c3;
+}
+#header{
+    position: absolute;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 88px;
+    left: 1000px;
+    top: 80px;
+    z-index: 100;
+    color: mediumspringgreen;
+}
+#about-me-details
+{ width: 610px;
+    height: 286px;
+    font-size: 23px;
+    font-weight: 100;
+    line-height: 32px;
+    position: absolute;
+    top: 200px;
+   ;
+}
+.button{
+    position: absolute;
+    top: 700px;
+    right: 1020px;
+    bottom: 0;
+    display:inline-block;
+}
+.buttoncv {
+    background-color: mediumspringgreen;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: #c7c3c3;
+    transition: background-color 0.7s ease;
+
+
+}
+.buttoncv:hover {
+    background-color: black;
+    color: mediumspringgreen;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.buttonhi {
+    background-color: mediumspringgreen;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: #c7c3c3;
+    transition: background-color 0.7s ease;
+
+}
+.buttonhi:hover {
+    background-color: black;
+    color: mediumspringgreen;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.button a{
+    margin-right: 15px;
+}
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+    display: flow;
+    color: mediumspringgreen;
+    margin-bottom: 5px;
+
+}
+.info>h3>span {
+    color: rgba(255, 255, 255, 0.49);
+    margin-left: 5px;
+
+    font-weight: normal;
+}
+.info {
+    position: absolute;
+    top: 450px;
+    right: 928px;
+    bottom: 0;
+
+}
+
+
 
 
 
