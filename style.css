@@ -477,8 +477,7 @@ h3 {
 /* Media queries */
 @media screen and (max-width: 768px) {
     .hamburger {
-        display: block; /* Show hamburger button for smaller screens */
-    }
+        display: block;
 
     .nav-links {
         display: none; /* Hide navigation links by default for smaller screens */
@@ -543,7 +542,7 @@ h3 {
     }
 
     .nav-links.active {
-        display: flex; /* Show navigation links when active class is added */
+        display: flex;
         flex-direction: column;
         background-color: #333;
         position: absolute;
