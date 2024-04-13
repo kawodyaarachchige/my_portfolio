@@ -222,6 +222,27 @@ nav ul li a:hover:after {
         border: 5px solid #5B213F; /* Magenta border */
     }
 }
+.icons{
+    position: absolute;
+    bottom:95px;
+    right: 415px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.icons img{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+.icons img:hover {
+    transform: scale(1.2);
+}
 
 section {
 
@@ -291,11 +312,6 @@ section.about .socials a:hover {
     margin: 4px;
     transition: all 0.3s ease;
 }
-
-/* Your existing CSS styles */
-
-/* Media queries for responsiveness */
-
 @media (max-width: 768px) {
     .hamburger-menu {
         display: flex;
