@@ -1,185 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Kawodya Arachchige">
-    <meta name="keywords" content="Kawodya Arachchige software engineer fullstack developer">
-    <meta name="author" content="Tharushi Kawodya">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-    <div class="container">
-        <nav>
-            <img id="logo" src="image/Screenshot_2024-03-26_at_09.11.58-removebg-preview.png">
-            <div class="hamburger" onclick="toggleNav()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-links">
-                <li> <a href="#home" class="active">Home</a> </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#assignments">Assignments</a></li>
-                <li><a href="#blog">blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<!--<header>
-    <div class="container">
-
-        <nav>
-            <img id="logo" src="image/Screenshot_2024-03-26_at_09.11.58-removebg-preview.png">
-            <ul>
-                <li> <a href="#home" class="active">Home</a> </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#assignments">Assignments</a></li>
-                <li><a href="#blog">blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-        </nav>
-    </div>
-</header>-->
-<main>
-    <section class="home">
-        <div class="summary">
-            <h1><span> Hello! My name is</span> <br>Kawodya*Arachchige </h1>
-            <h3>I am a Backend Developer</h3>
-            <p>Learning and growing in the world of coding</p>
+<div class="hero">
+    <nav>
+        <img src="./assets/images/logo.png" class="logo" />
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-        <div class="icons">
-            <img src="image/github.png"alt="github"width="50"height="50">
-            <img src="image/linkedin.png"alt="linkedin"width="50"height="50">
-            <img src="image/insta.png"alt="instagram"width="50"height="50">
-            <img src="image/mail.png"alt="mail"width="50"height="50">
-
-        </div>
-        <div class="email">
-            <a href="mailto:kawodya.wa@gmail.com">kawodya.wa@gmail.com</a>
-        </div>
-        <!--<div class="pp">
-            <img id="profile pic" src="image/profilepic.png"alt="Kawodya Arachchige"width="300"height="280">
-        </div>-->
-
-    </section>
-        <section id="about">
-            <div class="about-section">
-                <div class="photo-container">
-                    <img src="image/myimg.png" alt="about photo" class="about-photo">
-                </div>
-
-                <h2 id="header">About Me <!--<span>About me</span>--></h2>
-                <p id="about-me-details">My Name is Tharushi Kawodya. I am a passionate and dedicated software engineering student with a strong desire to learn and innovate. My journey in the world of technology began with a fascination for solving problems through code. Over the years, I have honed my skills in various programming languages and technologies, constantly seeking new challenges to push my boundaries.</p>
-                <div class="info" >
-                    <h3>Name: <span>Tharushi Kawodya Watagedara Arachchi</span></h3>
-                    <h3>Country: <span>Sri Lanka</span></h3>
-                    <h3>Education: <span>IJSE</span></h3>
-                    <h3>Birthday: <span>09th of March</span></h3>
-                </div>
-                <div class="button">
-                    <a href="#" class="buttoncv">Download CV</a>
-                    <a href="#" class="buttonhi">Hire Me</a>
-                </div>
-            </div>
-        </section>
-
-
-
-    <section id="projects">
-        <h1 id ='header2'>Projects</h1>
-        <div class="project">
-
-            <h2>FuelBee</h2>
-            <img src="image/p1.png" alt="Project 1 Image">
-            <p>This project is a comprehensive Fuel Inventory Management System developed using JavaFX for the user interface, CSS for styling, and follows a layered architecture design pattern. It stores and manages fuel inventory data in a MySQL database, allowing users to efficiently track fuel stock, monitor transactions, and generate reports.</p>
-            <a href="https://github.com/project1" target="_blank">GitHub Repository</a>
-        </div>
-
-        <div class="project">
-            <h2>BookWorm</h2>
-            <img src="image/p2.jpg" alt="Project 2 Image">
-            <p>The Library Management System is built using Hibernate for database operations, JavaFX for the graphical user interface, and CSS for styling. It provides functionalities to manage library resources such as books, members, and transactions efficiently. Users can search, borrow, return books, and track library activities.</p>
-            <a href="https://github.com/project2" target="_blank">GitHub Repository</a>
-        </div>
-
-        <div class="project">
-            <h2>BatTalk</h2>
-            <img src="image/p3.jpg" alt="Project 2 Image">
-            <p>This project implements a Chat Application using Java socket programming. It enables users to communicate in real-time over a network. The application utilizes JavaFX for the user interface, CSS for styling, and socket programming for establishing connections and exchanging messages between clients. It offers a simple yet effective platform for instant messaging.</p>
-            <a href="https://github.com/project2" target="_blank">GitHub Repository</a>
-        </div>
-
-    </section>
-
-    <!--<section id="skills">
-        <h1>Skills</h1>
-         <li>HTML</li>
-         <li>CSS</li>
-         <li>JavaScript</li>
-         <li>Python</li>
-         <li>Java</li>
-         <li>C++</li>
-
-    </section>
-    <section id="assignments">
-        <h1>Assignments</h1>
-        <h2>Assignment 1</h2>
-        <p>This is my first assignment. I am using HTML and CSS.</p>
-        <h2>Assignment 2</h2>
-        <p>This is my second assignment. I am using HTML and CSS.</p>
-        <h2>Assignment 3</h2>
-        <p>This is my third assignment. I am using HTML and CSS.</p>
-    </section>
-    <section id="blog"><h1>Blog</h1>
-
-        <h2>Blog 1</h2>
-        <p>This is my first blog. I am using HTML and CSS.</p>
-        <h2>Blog 2</h2>
-        <p>This is my second blog. I am using HTML and CSS.</p>
-        <h2>Blog 3</h2>
-        <p>This is my third blog. I am using HTML and CSS.</p>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Assignments</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <span class="title">Back End Developer</span>
+        <h1>Hello, I’m <span>ThaRu Arachchige</span></h1>
         <p>
-            <a href="https://kawodya.wordpress.com" target="_blank" >Read More</a>
+            Empowering Solutions through Code and Creativity:
+            I am a Software Developer, <br>Problem Solver, <br>and Designer...
         </p>
-        <p>
-            Here, I delve into various topics within the realm of software engineering, from coding best practices to project management methodologies.
-            Stay tuned for insightful articles, tutorials, and discussions, as I share my passion for all things tech.
-            With more exciting content on the horizon, I invite you to join me on this journey of exploration and learning
-        </p>
-    </section>
-    <section id ="gallery">
-        <h2>Gallery</h2>
-            <ul>
-                <li>
-                    <img src="">
-                </li>
-
-            </ul>
-
-    </section>
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>Let's Connect<br>
-            Reach out for collaboration, inquiries, or just to say hello!<br>
-            <a href="mailto:kawodya.wa@gmail.com">kawodya.wa@gmail.com</a>
-        </p>
-
-    </section>-->
-</main>
-    <footer>
-        © 2024 Kawodya Arachchige. All rights reserved.
-    </footer>
-
+    </div>
+    <div class="images">
+        <div>
+            <img src="./assets/images/my.png" class="hero-img" />
+        </div>
+    </div>
+    <div class="text">
+        <p> ( : Learning and growing in the world of coding  : ) </p>
+    </div>
+</div>
+<section class="about" id="about">
+    <div class="container flex items-centre">
+        <div class="left flex-1 justify-right">
+            <img src="./assets/images/myimg.png" height="300px" alt="profile pic">
+        </div>
+        <div class="right flex-1">
+            <h1>About <span>Me</span></h1>
+            <h3>Hello! I'm Akshat Sharma.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci distinctio obcaecati aliquid,
+                quia tempora quis optio repudiandae officia earum?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <div class="socials">
+                <a href="#"><img src="./images/website.png" width="40px"></a>
+                <a href="#"><img src="./images/facebook.png" width="40px"></a>
+                <a href="#"><img src="./images/instagram.png" width="40px"></a>
+                <a href="#"><img src="./images/media-player.png" width="40px"></a>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="script.js"></script>
 </body>
 </html>
-<input type="submit" value="">
