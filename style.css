@@ -160,17 +160,17 @@ nav ul li a:hover:after {
 .images {
     position: absolute;
     background-color: transparent;
-    width: 500px; /* Adjust the width to fit the image */
-    height: 500px; /* Adjust the height to fit the image */
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     overflow: hidden; /* Hide overflowing content (i.e., parts of the image outside the circle) */
     top:160px;
     left: 159px;
-    animation: rotateBorder 10s linear infinite; /* Apply animation */
+    animation: rotateBorder 10s linear infinite;
 }
 
 .hero-img {
-    width: 78%; /* Ensure the image fills the container */
+    width: 78%;
     object-fit: cover; /* Cover the entire container with the image */
     display: block; /* Ensure the image is displayed as a block element */
     position: relative; /* Ensure the image respects its parent's positioning */
@@ -244,23 +244,28 @@ nav ul li a:hover:after {
     transform: scale(1.2);
 }
 
-section {
-
-}
-section.about .container {
-    display: flex;
-    flex-direction: row-reverse;
-
-    align-items: center;
-    width: 100vw;
+section.about {
+    position: relative;
+    width: 100%;
     height: 100vh;
     background-color: #5B213F;
 }
 
+section.about .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 15%;
+}
+
 section.about h1 {
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #E6A3C2;
+    font-weight: 100;
+    margin-top: 200px;
+    margin-bottom: 30px;
+
 }
 
 section.about h1 span {
@@ -268,33 +273,85 @@ section.about h1 span {
 }
 
 section.about h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height:2.2;
     font-weight: 600;
-}
+    color: #E6A3C2;
+    align-items: center;
 
+
+
+}
+section.about h3 span {
+    color: white;
+    left: 16px;
+}
 section.about p {
-    font-family: 'Lato', sans-serif;
+
     color: white;
     line-height: 1.9rem;
-    margin-bottom: 2rem;
+    margin-bottom: 50px;
+    font-size: 20px;
+
 }
 
-section.about .socials {
-    display: flex;
+.about-img {
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 100px;
+    top: 600px;
+    bottom: 0;
+    margin: auto;
+
 }
 
-section.about .socials a {
+.abt-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.buttons {
     display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    cursor: pointer;
+
+}
+
+.buttons button {
+    margin: 0 10px;
+    border:2px solid #E6A3C2;
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    right: 170px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    margin-right: 0.8rem;
-    border-radius: 50%;
+    text-decoration: none;
+    font-size: 13px;
+}
+.buttons img {
+    margin-left: 10px; /* Add spacing between icon and text */
 }
 
-section.about .socials a:hover {
-    background: white;
+.icons-container {
+    position: absolute;
+    top: 32%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    animation: rotateAnimation 2s linear infinite; /* Apply rotation animation */
+}
+
+@keyframes rotateAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* Media Queries */
