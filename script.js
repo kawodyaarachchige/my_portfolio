@@ -17,21 +17,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     var landingPage = document.querySelector('.landing-page');
     var mainContent = document.querySelector('main');
 
     // Detect the end of the animation and show the main content
     landingPage.addEventListener('animationend', function() {
         showMainContent();
-    });
+    });*/
 
-    function showMainContent() {
+/*    function showMainContent() {
         // Hide the landing page and display the main content
         landingPage.style.display = 'none';
         mainContent.style.display = 'block';
     }
-});
+});*/
 const cursor = document.querySelector("#cursor");
 document.addEventListener("mousemove", function (e){
     window.requestAnimationFrame(() => {
@@ -39,3 +39,34 @@ document.addEventListener("mousemove", function (e){
         cursor.style.left = `${e.clientX - cursor.offsetWidth/2}px`;
     });
 })
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all images within .box-project
+    const images = document.querySelectorAll('.fa-regular');
+
+    // Add click event listener to each image
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            // Get the current project's ID
+            const currentProjectId = this.closest('.box-container-sub').id;
+            // Determine the next project's ID
+            let nextProjectId = '';
+            if (currentProjectId === 'project1') {
+                nextProjectId = 'project2';
+            } else if (currentProjectId === 'project2') {
+                nextProjectId = 'project3';
+            } else {
+                // Reset to the first project if the current is the last
+                nextProjectId = 'project1';
+            }
+
+            // Calculate the transform value based on the next project's position
+            const nextProjectElement = document.getElementById(nextProjectId);
+            const nextProjectPosition = nextProjectElement.offsetTop;
+            const transformValue = `translateY(-${nextProjectPosition}px)`;
+
+            // Apply the transform to the .box-container-projects div
+            const container = document.querySelector('.box-container-projects');
+            container.style.transform = transformValue;
+        });
+    });
+});

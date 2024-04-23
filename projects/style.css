@@ -1,0 +1,88 @@
+*{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    margin: 0;
+}
+#project-1 , #project-2 , #project-3{
+    width: 100vw;
+    height: 100vh;
+    /*padding: 20px 9%;*/
+    padding-top: 50px;
+
+    text-align: center;
+    justify-items: center;
+
+    background-color: black;
+}
+#box-container-project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+#box-container-project>div{
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+.box-project h1{
+    font-size: 30px;
+    line-height: 1.2;
+    color: #E6A3C2;
+    font-weight: 100;
+}
+#project-1 , #project-2 , #project-3 p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0;
+    color: white;
+}
+.buttons button{
+    margin: 10px;
+    border:2px solid #E6A3C2;
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    right: 170px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 15px;
+}
+.buttons img {
+    margin-left: 10px;
+}
+.buttons button:hover{
+    border: 2px solid #ad577d;
+    color: #ad577d;
+}
+#back-btn{
+    position: fixed;
+    left: 0;
+}
+
+@media screen and (max-width: 1200px){
+    .buttons button{
+        font-size: 12px;
+    }
+    .box-project h1{
+        font-size: 25px;
+        line-height: 1.2;
+        color: #E6A3C2;
+        font-weight: 100;
+    }
+    #project-1 , #project-2 , #project-3 p{
+        font-size: 15px;
+        font-weight: 200;
+        margin: 15px 0;
+        color: white;
+    }
+    .box-project > img{
+        width: 300px;
+        height: 350px;
+    }
+}

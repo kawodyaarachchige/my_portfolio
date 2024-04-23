@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="cursor">
-    <div></div>
-</div>
 <header>
     <nav>
-        <img src="./assets/images/logo.png" class="logo" />
+        <img src="assets/images/logo.png" class="logo" />
         <div class="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#main" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Assignments</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">ToolBox</a></li>
+            <li><a href="#assignments">Assignments</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
-<div class="hero">
-    <div class="content">
-        <span class="title">Back End Developer</span>
-        <h1>Hello, I’m <span>ThaRu Arachchige</span></h1>
-        <p>
-            Empowering Solutions through Code and Creativity:
-            I am a Software Developer, <br>Problem Solver, <br>and Designer...
-        </p>
-    </div>
-    <div class="images">
-        <div>
-            <img src="./assets/images/my.png" class="hero-img" />
+<section id="main">
+    <div class="box-container-main">
+        <div class="box-main">
+            <div class="images box-hero">
+                <div>
+                    <img src="./assets/images/my.png" class="hero-img" />
+                </div>
+            </div><br>
+            <p class="text">( : Learning and growing in the world of coding  : )</p><br>
+            <div class="box-container-social">
+                <i class="fa-brands fa-github fa-2xl"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-linkedin fa-2xl"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-wordpress fa-2xl"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-facebook fa-2xl"></i>&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="box-main">
+            <span class="title">Back End Developer</span><br>
+            <h1>Hello, I’m <span>ThaRu Arachchige</span></h1><br>
+            <p id="hero-about">
+                Empowering Solutions through Code and Creativity:
+                I am a Software Developer, <br>Problem Solver, <br>and Designer...
+            </p>
         </div>
     </div>
-    <div class="text">
-        <p> ( : Learning and growing in the world of coding  : ) </p>
-    </div>
-    <div class="icons">
-        <a href="#"><img src="assets/icons/github.png" alt="github" width="50" height="50"></a>
-        <a href="#"><img src="assets/icons/linkedin.png" alt="linkedin" width="50" height="50"></a>
-        <a href="#"><img src="assets/icons/wordpress.png" alt="mail" width="50" height="50"></a>
-        <a href="#"><img src="assets/icons/twitter.png" alt="facebook" width="50" height="50"></a>
-    </div>
-</div>
-</div>
-<section class="about" id="about">
-    <div class="container flex items-centre">
-        <div class="right flex-1">
-            <h1>About <span>Me</span></h1>
-            <div class="icons-container">
-                <img src="./assets/icons/icons8-bishop-64.png" alt="bishop" width="50" height="50">
+
+</section>
+<section id="about">
+    <div class="box-container-about">
+        <div class="box-about">
+            <div id="about-me-title">
+                <h1>About <span>Me</span></h1>&nbsp;&nbsp;
+
+                <img src="./assets/icons/icons8-bishop-64.png" alt="bishop" width="50" height="50" class="icons-container">
+
             </div>
             <p> I'm Tharushi Kawodya. I'm learning computer science, focusing on backend development, and getting into machine learning. I like solving problems and making things look good. Let's work together and make cool stuff!
             </p>
@@ -67,34 +67,204 @@
             <h3>Country :<span> Sri Lanka - Matara</span> </h3>
             <h3>Birthday :<span>09th of March</span></h3>
             <h3>School : <span>Sujatha College</span></h3>
+            <div class="buttons">
+                <a href=""><button class="btn btn-primary">Download CV  <img src="assets/icons/icons8-cv-50.png" alt="cv" width="30" height="30"></button></a>
+                <a href=""><button class="btn btn-secondary">Hire Me  <img src="assets/icons/icons8-work-48.png" alt="work" width="30" height="30"></button></a>
+                <a href="certificates/index.html"><button class="btn btn-certificates">View Certificates <img src="assets/icons/icons8-diploma-64.png" alt="diploma" width="30" height="30"></button></a>
+                <a href="gallery/index.html"><button class="btn btn-gallery">View Gallery  <img src="assets/icons/icons8-gallery-48.png" alt="gallery" width="30" height="30"></button></a>
+            </div>
+        </div>
+        <div class="box-about">
+            <marquee id="marquee-about" behavior="scroll" direction="down" scrollamount="0">
+                <span class="text1">I'm a creative designer</span><br>
+                <span class="text1"> developer</span><br>
+                <span class="text1"> & Problem Solver</span><br>
+            </marquee>
         </div>
     </div>
-    <div class="buttons">
-        <a href=""><button class="btn btn-primary">Download CV  <img src="./assets/icons/icons8-cv-50.png" alt="cv" width="30" height="30"></button></a>
-        <a href=""><button class="btn btn-secondary">Hire Me  <img src="assets/icons/icons8-work-48.png" alt="work" width="30" height="30"></button></a>
-        <a href=""><button class="btn btn-certificates">View Certificates <img src="assets/icons/icons8-diploma-64.png" alt="diploma" width="30" height="30"></button></a>
-        <a href=""><button class="btn btn-gallery">View Gallery  <img src="assets/icons/icons8-gallery-48.png" alt="gallery" width="30" height="30"></button></a>
-    </div>
-    <div class="marquee-container">
-        <marquee behavior="scroll" direction="down" scrollamount="0">
-            <span class="text1">I'm a creative designer</span><br>
-            <span class="text1"> developer</span><br>
-            <span class="text1"> & Problem Solver</span><br>
-        </marquee>
+</section>
+<section id="projects">
+    <div id="box-container-projects">
+        <div class="box-project">
+            <h1>Projects</h1>
+            <img src="assets/images/logo.png" title="Projects" alt="projects" class="projects-cover">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut deleniti molestias, nam placeat recusandae?
+            </p>
+            <div class="buttons">
+                <a href="projects/index.html"><button class="btn btn-primary">View Projects  <img src="assets/icons/icons8-cv-50.png" alt="view-projects" width="30" height="30"></button></a>
+            </div>
+        </div>
     </div>
 </section>
-
-<section class="projects">
-    <div class="container">
-        <!-- Your projects content goes here -->
+<!--<section id="certificates"></section>-->
+<section id="skills">
+    <div id="box-container-skills">
+        <h1>My ToolBox</h1>
+        <div class="box-skills">
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Python</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+            <div class="sub-box-skills">
+                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+                <p>Java</p>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur consequuntur dolore dolorum eius laudantium odit perferendis, porro quis reprehenderit sit.</p>
     </div>
 </section>
+<section id="assignments">
+    <h1>Assignments</h1>
+    <div id="box-container-assignments">
+        <div class="box-assignments">
+            <h3>Assignment 01</h3>
+            <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+            <div class="buttons">
+                <a href=""><button class="btn btn-primary">GitHub  <img src="assets/icons/icons8-cv-50.png" alt="view-git" width="30" height="30"></button></a>
+                <a href=""><button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page" width="30" height="30"></button></a>
+            </div>
+        </div>
+        <div class="box-assignments">
+            <h3>Assignment 02</h3>
+            <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+            <div class="buttons">
+                <a href=""><button class="btn btn-primary">GitHub  <img src="assets/icons/icons8-cv-50.png" alt="view-git" width="30" height="30"></button></a>
+                <a href=""><button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page" width="30" height="30"></button></a>
+            </div>
+        </div>
+        <div class="box-assignments">
+            <h3>Assignment 03</h3>
+            <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+            <div class="buttons">
+                <a href=""><button class="btn btn-primary">GitHub  <img src="assets/icons/icons8-cv-50.png" alt="view-git" width="30" height="30"></button></a>
+                <a href=""><button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page" width="30" height="30"></button></a>
+            </div>
+        </div>
+        <div class="box-assignments">
+            <h3>Assignment 04</h3>
+            <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+            <div class="buttons">
+                <a href=""><button class="btn btn-primary">GitHub  <img src="../portfolio-tkw-2/assets/icons/icons8-cv-50.png" alt="view-git" width="30" height="30"></button></a>
+                <a href=""><button class="btn btn-primary">View <img src="../portfolio-tkw-2/assets/icons/icons8-cv-50.png" alt="view-page" width="30" height="30"></button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="blog">
+    <h1>Blogs</h1>
+    <div class="box-container-blogs">
+        <div id="blogs">
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <main id="carousel">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </main>
+        </div>
+    </div>
+</section>
+<section id="hobbies">
+    <h1>Hobbies</h1>
+    <div class="box-container-hobbies">
+        <div class="box-hobbies">
+            <h3>My Favourite Hobbies</h3>
+            <ul>
+                <li>Coding</li>
+                <li>Designing</li>
+                <li>Drawings</li>
+                <li>Singing</li>
+                <li>Dancing</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Ad aliquid amet aspernatur
+                commodi corporis deserunt dolor ducimus eius eum, ipsam ipsum, laboriosam magni odit officia perspiciatis sit veritatis.
+                Debitis deleniti et, eum fugit omnis possimus sapiente temporibus.
+                Distinctio exercitationem nemo provident quas quidem! Alias amet ipsam officia, porro quasi totam.</p>
+        </div>
+        <div class="box-hobbies">
+            <div id="designs">
+                <input type="radio" name="position" checked />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <main id="carousel1">
+                    <div class="item1"></div>
+                    <div class="item1"></div>
+                    <div class="item1"></div>
+                    <div class="item1"></div>
+                    <div class="item1"></div>
+                </main>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div id="contact-details">
+        <h1 id="contact-header">Let's create something together</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos, dolore ea excepturi fuga hic labore nisi, quam,
+            qui quia repellendus similique veniam vero vitae. Doloremque
+            eos est fuga fugiat voluptas.</p>
+        <div id="social-logos">
+            <a href="#" class="fa-brands fa-github fa-2xl"></a>&nbsp;&nbsp;
+            <a href="#" class="fa-brands fa-linkedin fa-2xl"></a>&nbsp;&nbsp;
+            <a href="#" class="fa-brands fa-facebook fa-2xl"></a>&nbsp;&nbsp;
+            <a href="#" class="fa-brands fa-codepen fa-2xl"></a>&nbsp;&nbsp;
+            <a href="#" class="fa-brands fa-medium fa-2xl"></a>
+        </div><br>
+        <div class="buttons">
+            <a href="https://mail.google.com/mail/u/0/#inbox"><button class="btn btn-primary">Shoot me an email <img src="assets/icons/icons8-cv-50.png" alt="view-git" width="30" height="30"></button></a>
+        </div>
+    </div>
 
+</section>
 <footer>
-    <!-- Your footer content goes here -->
+    <div>
+        <p>Copyright © 2024 TharuArachchige All rights reserved.</p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/1eef1792c9.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
