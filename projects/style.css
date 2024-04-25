@@ -3,15 +3,23 @@
     scroll-behavior: smooth;
     overflow: hidden;
     margin: 0;
+    padding: 0;
+}
+.back-buttons{
+    position: absolute;
+    z-index: 999;
 }
 #project-1 , #project-2 , #project-3{
     width: 100vw;
     height: 100vh;
-    /*padding: 20px 9%;*/
-    padding-top: 50px;
+    padding-top: 150px;
 
     text-align: center;
     justify-items: center;
+
+    position: relative;
+    top: -10px;
+
 
     background-color: black;
 }
@@ -63,6 +71,10 @@
 #back-btn{
     position: fixed;
     left: 0;
+    top: 10px;
+    width: 100px;
+    height: 50px;
+
 }
 
 @media screen and (max-width: 1200px){
