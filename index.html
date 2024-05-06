@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 <header>
@@ -39,7 +42,7 @@
                 <i class="fa-brands fa-github"></i>&nbsp;&nbsp;
                 <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;
                 <i class="fa-brands fa-wordpress"></i>&nbsp;&nbsp;
-                <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-medium"></i>&nbsp;&nbsp;
             </div>
         </div>
         <div class="box-main">
@@ -51,13 +54,11 @@
             </p>
         </div>
     </div>
-
 </section>
-
 
 <section id="about">
     <div class="box-container-about">
-        <div class="box-about">
+        <div class="box-about hidden">
             <div id="about-me-title">
                 <h1>--About <span>Me--</span></h1>&nbsp;&nbsp;
 
@@ -69,51 +70,29 @@
                 machine learning. I like solving problems and making things look good. Let's work together and make cool
                 stuff!
             </p>
-            <h3>Name : <span>Tharushi Kawodya Arachchige</span></h3>
-            <h3>Country :<span> Sri Lanka - Matara</span></h3>
-            <h3>Birthday :<span>09th of March</span></h3>
-            <h3>School : <span>Sujatha College-Matara</span></h3>
-            <div class="buttons buttons-about">
-              <!--  <a href="">
-                    <button class="btn btn-primary btn-about">Download CV <img src="assets/icons/icons8-cv-50.png" alt="cv"
-                                                                     width="30" height="30"></button>
-                </a>-->
+            <div id="about-me-details">
+                <h3>Name : <span>Tharushi Kawodya Arachchige</span></h3>
+                <h3>Country :<span> Sri Lanka - Matara</span></h3>
+                <h3>Birthday :<span>09th of March</span></h3>
+                <h3>School : <span>Sujatha College-Matara</span></h3>
+            </div>
+            <div class="buttons buttons-about hidden">
                 <a href="">
-                    <button class="btn btn-secondary btn-about">Hire Me <img src="assets/icons/icons8-work-48.png" alt="work"
-                                                                   width="30" height="30"></button>
+                    <button class="btn btn-secondary btn-about">Hire Me <img src="assets/icons/icons8-work-48.png" alt="Hire-Me"
+                                                                             width="30" height="30"></button>
                 </a>
                 <a href="certificates/index.html">
                     <button class="btn btn-certificates btn-about">View Certificates <img src="assets/icons/icons8-diploma-64.png"
-                                                                                alt="diploma" width="30" height="30">
+                                                                                          alt="My-Certificates" width="30" height="30">
                     </button>
                 </a>
-                <a href="gallery/index.html">
-                    <button class="btn btn-gallery btn-about">View Gallery <img src="assets/icons/icons8-gallery-48.png"
-                                                                      alt="gallery" width="30" height="30"></button>
+                <a href="#gallery">
+                    <button class="btn btn-gallery btn-about">Download CV <img src="assets/icons/icons8-gallery-48.png"
+                                                                               alt="My-CV" width="30" height="30"></button>
                 </a>
             </div>
         </div>
-        <div class="box-about">
-
-           <!-- <marquee id="marquee-about" behavior="scroll" direction="down" scrollamount="0">
-                <span class="text1">I'm a creative designer</span><br>
-                <span class="text1"> developer</span><br>
-                <span class="text1"> & Problem Solver</span><br>
-            </marquee>-->
-           <!-- <div class="card">I'm a creative designer  </div>--><!--
-            <div class="terminal-loader">
-                <div class="terminal-header">
-                    <div class="terminal-title">Status</div>
-                    <div class="terminal-controls">
-                        <div class="control close"></div>
-                        <div class="control minimize"></div>
-                        <div class="control maximize"></div>
-                    </div>
-                </div>
-                <div class="text">I'm Best</div>
-            </div>-->
-
-        </div>
+        <div class="box-about"></div>
     </div>
 </section>
 <section id="projects">
@@ -124,11 +103,11 @@
                 <p><span>Done projects 17+</span></p>
                 &lt;!&ndash; <p><span></span></p>&ndash;&gt;
             </div>-->
-<!--            =====================================================-->
-            <div class="cube-container">
+            <!--            =====================================================-->
+            <div class="cube-container hidden">
                 <div class="cube">
-                    <div class="face front"><img src ="assets/images/chat.png" class="box-side-img"></div>
-                    <div class="face back"><img src ="assets/images/batTalk.png" class="box-side-img"></div>
+                    <div class="face front"><img src ="assets/images/batTalk.png" class="box-side-img" title="Java Socket programming chat application , based on bat man theme , check it out.."></div>
+                    <div class="face back"><img src ="assets/images/chat.png" class="box-side-img"></div>
                     <div class="face right"><img src ="assets/images/bookWorm.png" class="box-side-img"></div>
                     <div class="face left"><img src ="assets/images/bankingSystem.png" class="box-side-img"></div>
                     <div class="face top"> <img src ="assets/images/cal.png" class="box-side-img"> </img></div>
@@ -136,167 +115,292 @@
                 </div>
 
             </div>
-<!--            =====================================================-->
-            <div class="buttons view-projects-btn">
-                <a href="projects/index.html">
-                    <button class="btn btn-primary">View Projects <img src="assets/icons/icons8-cv-50.png"
-                                                                       alt="view-projects" width="30" height="30">
-                    </button>
-                </a>
-            </div>
+            <!--            =====================================================-->
+
+        </div>
+        <div class="buttons view-projects-btn">
+            <a href="projects/index.html">
+                <button class="btn btn-primary">View Projects <img src="assets/icons/icons8-cv-50.png"
+                                                                   alt="view-projects" width="30" height="30">
+                </button>
+            </a>
         </div>
     </div>
 </section>
-<!--<section id="certificates"></section>-->
 <section id="skills">
     <div id="box-container-skills">
-        <h1>--My ToolBox--</h1>
+        <h1 class="section-h1">--My ToolBox--</h1>
         <div class="box-skills">
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/java.png" alt="cv" width="70" height="70">
                 <p>Java</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/javascript.png" alt="cv" width="70" height="70">
+                <p>JavaScript</p>
+            </div>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/python.png" alt="cv" width="70" height="70">
                 <p>Python</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
-                <p>Java</p>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/swift.png" alt="cv" width="70" height="70">
+                <p>Swift</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
-                <p>Java</p>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/c-sharp.png" alt="cv" width="70" height="70">
+                <p>C#</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
-                <p>Java</p>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/mysql.png" alt="cv" width="70" height="70">
+                <p>MySQL</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
-                <p>Java</p>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/html.png" alt="cv" width="70" height="70">
+                <p>HTML</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
-                <p>Java</p>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/css.png" alt="cv" width="70" height="70">
+                <p>CSS</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
-                <p>Java</p>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/jquery.png" alt="cv" width="70" height="70">
+                <p>jQuery</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
-                <p>Java</p>
+
+            <!--            <div class="sub-box-skills hidden">-->
+            <!--                <img src="assets/icons/angularjs.png" alt="cv" width="70" height="70">-->
+            <!--                <p>Angular</p>-->
+            <!--            </div>-->
+            <!--            <div class="sub-box-skills hidden">-->
+            <!--                <img src="assets/icons/react.png" alt="cv" width="70" height="70">-->
+            <!--                <p>React</p>-->
+            <!--            </div>-->
+            <!--            <div class="sub-box-skills hidden">-->
+            <!--                <img src="assets/icons/nodejs.png" alt="cv" width="70" height="70">-->
+            <!--                <p>NodeJS</p>-->
+            <!--            </div>-->
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/figma.png" alt="cv" width="70" height="70">
+                <p>Figma</p>
             </div>
-            <div class="sub-box-skills">
-                <img src="assets/icons/icons8-cv-50.png" alt="cv" width="70" height="70">
-                <p>Java</p>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/adobe.png" alt="cv" width="70" height="70">
+                <p>AutoCAD</p>
+            </div>
+            <div class="sub-box-skills hidden">
+                <img src="assets/icons/git.png" alt="cv" width="70" height="70">
+                <p>Git</p>
             </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur consequuntur dolore dolorum eius
-            laudantium odit perferendis, porro quis reprehenderit sit.</p>
     </div>
 </section>
 <section id="assignments">
-    <h1>Assignments</h1>
+    <h1 class="section-h1">Assignments</h1>
     <div id="box-container-assignments">
-        <div class="box-assignments">
-            <h3>Assignment 01</h3>
-            <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
-            <div class="buttons">
-                <a href="">
-                    <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
-                                                                width="30" height="30"></button>
-                </a>
-                <a href="">
-                    <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
-                                                              width="30" height="30"></button>
-                </a>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 01</h3>
+                </div>
+                <div class="second-content">
+                    <!--<div>
+                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+                    </div>-->
+                    <div class="buttons">
+                        <a href="">
+                            <button class="btn btn-primary">GitHub <a href="#" class="fa-brands fa-github fa-2xl"></a></button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="box-assignments">
-            <h3>Assignment 02</h3>
-            <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
-            <div class="buttons">
-                <a href="">
-                    <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
-                                                                width="30" height="30"></button>
-                </a>
-                <a href="">
-                    <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
-                                                              width="30" height="30"></button>
-                </a>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 02</h3>
+                </div>
+                <div class="second-content">
+                    <!--<div>
+                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+                    </div>-->
+                    <div class="buttons">
+                        <a href="">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="box-assignments">
-            <h3>Assignment 03</h3>
-            <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
-            <div class="buttons">
-                <a href="">
-                    <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
-                                                                width="30" height="30"></button>
-                </a>
-                <a href="">
-                    <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
-                                                              width="30" height="30"></button>
-                </a>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 03</h3>
+                </div>
+                <div class="second-content">
+                    <!--<div>
+                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+                    </div>-->
+                    <div class="buttons">
+                        <a href="">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="box-assignments">
-            <h3>Assignment 04</h3>
-            <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
-            <div class="buttons">
-                <a href="">
-                    <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png"
-                                                                alt="view-git" width="30" height="30"></button>
-                </a>
-                <a href="">
-                    <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png"
-                                                              alt="view-page" width="30" height="30"></button>
-                </a>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 04</h3>
+                </div>
+                <div class="second-content">
+                    <!--<div>
+                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+                    </div>-->
+                    <div class="buttons">
+                        <a href="">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 04</h3>
+                </div>
+                <div class="second-content">
+                    <!--<div>
+                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+                    </div>-->
+                    <div class="buttons">
+                        <a href="">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 04</h3>
+                </div>
+                <div class="second-content">
+                    <!--<div>
+                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+                    </div>-->
+                    <div class="buttons">
+                        <a href="">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section id="blog">
-    <h1>Blogs</h1>
-    <div class="box-container-blogs">
-        <div id="blogs">
-            <input type="radio" name="position" checked/>
-            <input type="radio" name="position"/>
-            <input type="radio" name="position"/>
-            <input type="radio" name="position"/>
-            <input type="radio" name="position"/>
-            <main id="carousel">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-            </main>
+    <h1 class="section-h1">Blogs</h1>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://miro.medium.com/v2/resize:fit:1000/format:webp/1*P9khlajYlxVHGxRjytp-KQ.png" alt="" />
+            </div>
+            <a href="https://medium.com/@kawodya.wa/unveiling-the-backbone-of-efficient-software-a-dive-into-data-structures-4396f0d0a5bc">
+                <div class="card-body">
+                    <span class="tag tag-teal">Technology</span>
+                    <h4>Unveiling the Backbone of Efficient Software: A Dive into Data Structures</h4>
+                    <p>
+                        In the realm of computer science, where efficiency is paramount and complexity is the norm...
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://kawodya.files.wordpress.com/2024/01/1fy8iymeieexczguov1nhtq.jpg" alt="" />
+            </div>
+            <a href="https://kawodya.wordpress.com/2024/01/30/mastering-object-oriented-programming-oop-with-java-a-practical-guide/">
+                <div class="card-body">
+                    <span class="tag tag-purple">Java</span>
+                    <h4>
+                        Mastering Object-Oriented Programming (OOP) with Java: A Practical Guide
+                    </h4>
+                    <p>
+                        In the vast realm of software development, Object-Oriented Programming (OOP) serves as a cornerstone paradigm...
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://kawodya.files.wordpress.com/2024/01/python-dictionary.png" alt="" />
+            </div>
+            <a href="https://kawodya.wordpress.com/2024/01/22/python-unveiled-a-beginners-guide-to-programming/">
+                <div class="card-body">
+                    <span class="tag tag-pink">Python</span>
+                    <h4>Python Unveiled – A Beginner’s Guide to Programming</h4>
+                    <p>
+                        Greetings, fellow adventurers! Today, we embark on a journey into the magical realm of Python programming.
+                        Imagine Python as your trusty guide, leading you through a world of coding wonders...
+                    </p>
+                </div>
+            </a>
         </div>
     </div>
 </section>
 <section id="hobbies">
-    <h1>Hobbies</h1>
+    <h1 class="section-h1">Hobbies</h1>
     <div class="box-container-hobbies">
         <div class="box-hobbies">
-            <h3>My Favourite Hobbies</h3>
+            <!--<h3>My Favourite Hobbies</h3>
             <ul>
-                <li>Coding</li>
+                <li><img src="assets/icons/coding.gif" alt="coding" width="50" height="50">Coding</li>
                 <li>Designing</li>
                 <li>Drawings</li>
                 <li>Singing</li>
                 <li>Dancing</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet,
+            </ul>-->
+            <!--<p>Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Ad aliquid amet aspernatur
                 commodi corporis deserunt dolor ducimus eius eum, ipsam ipsum, laboriosam magni odit officia
                 perspiciatis sit veritatis.
                 Debitis deleniti et, eum fugit omnis possimus sapiente temporibus.
-                Distinctio exercitationem nemo provident quas quidem! Alias amet ipsam officia, porro quasi totam.</p>
+                Distinctio exercitationem nemo provident quas quidem! Alias amet ipsam officia, porro quasi totam.</p>-->
         </div>
-        <div class="box-hobbies">
+        <div class="box-hobbies hidden">
             <div id="designs">
                 <input type="radio" name="position" checked/>
                 <input type="radio" name="position"/>
@@ -313,14 +417,28 @@
             </div>
         </div>
     </div>
+    <!-- <img src="assets/images/cute-white-cat-paws-up-over-wall-cartoon-illustration-vector%20(2).jpg" title="cute-kitty" alt="cute-kitty">-->
+</section>
+<section id="gallery">
+    <div class="box-gallery">
+        <h1 class="hidden">My Gallery  Art in Focus</h1>
+        <span style="--i: 1"><img class="my-img hidden" src="assets/images/mygal/2E233EDC-F13D-4199-9AF3-60CD56EA56FC%202.JPEG"></span>
+        <span style="--i: 2"><img class="my-img hidden" src="assets/images/mygal/34A25CFF-1FAC-4B0C-8016-FAF715723084.JPEG"></span>
+        <span style="--i: 3"><img class="my-img hidden" src="assets/images/mygal/IMG_6697.jpg"></span>
+        <span style="--i: 4"><img class="my-img hidden" src="assets/images/mygal/IMG_4493.jpg"></span>
+        <span style="--i: 5"><img class="my-img hidden" src="assets/images/mygal/IMG_5773.JPG"></span>
+        <span style="--i: 6"><img class="my-img hidden" src="assets/images/mygal/MNM_4627%202.jpg"></span>
+        <span style="--i: 7"><img class="my-img hidden" src="assets/images/mygal/IMG_4504%202.JPG"></span>
+        <span style="--i: 8"><img class="my-img hidden" src="assets/images/mygal/dd8578e7-40a0-4daf-bb38-a338bc02c7c9.jpg"></span>
+    </div>
 </section>
 <section id="contact" >
     <div id="contact-details">
         <h1 id="contact-header">Let's create something together</h1>
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
-<!--            Dignissimos, dolore ea excepturi fuga hic labore nisi, quam,-->
-<!--            qui quia repellendus similique veniam vero vitae. Doloremque-->
-<!--            eos est fuga fugiat voluptas.</p>-->
+        <!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+        <!--            Dignissimos, dolore ea excepturi fuga hic labore nisi, quam,-->
+        <!--            qui quia repellendus similique veniam vero vitae. Doloremque-->
+        <!--            eos est fuga fugiat voluptas.</p>-->
         <div id="social-logos">
             <div>
                 <div>
@@ -359,7 +477,7 @@
                 <button class="btn-contact">Shoot me an email &nbsp;<i class="fa-solid fa-arrow-right-long"></i></button>
             </a>
         </div>
-      <!--  <div class="loader"></div>-->
+        <!--  <div class="loader"></div>-->
     </div>
     <div id="footer-div">
         <p>Copyright © 2024 TharuArachchige All rights reserved.</p>
