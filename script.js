@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 /*document.addEventListener("DOMContentLoaded", function() {
     var landingPage = document.querySelector('.landing-page');
     var mainContent = document.querySelector('main');
@@ -70,3 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+const observer=new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        }else{
+            entry.target.classList.remove('show');
+        }
+    })
+})
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((e1)=>observer.observe(e1));
