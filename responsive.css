@@ -55,8 +55,8 @@
     .box-container-main>div>h1>span{
         font-size: 60px;
     }
-    .box-container-main>div>p{
-        font-size: 16px;
+    .container-main>div:nth-child(1)>p {
+        font-size: 0.7em;
     }
 
     #about{
@@ -145,8 +145,8 @@
     }
     .box-container-main>div:nth-child(2) {
         position: relative;
-        top: 10%;
-        left: 10px;
+        top: 24%;
+        left: 57px;
     }
     .box-container-main>div>div:nth-child(1){
         width: 300px;
@@ -162,7 +162,7 @@
     }
     .box-container-main > div > span {
         position: relative;
-        left: 130px;
+        left: 10px;
     }
     .box-container-main>div {
         position: relative;
@@ -178,7 +178,7 @@
 
     }
     .box-container-main>div:nth-child(1)>p{
-        font-size: 0.7em;
+        font-size: 15px;
     }
 
     .box-container-social i{
@@ -190,6 +190,41 @@
         width: 100%;
         position: relative;
         top: 0;
+    }
+    /*Cube Styles until max-width: 991px*/
+    .cube-container {
+        width: 300px;
+        height: 300px;
+    }
+    .face {
+        width: 300px;
+        height: 300px;
+    }
+    .front {
+        transform: translateZ(150px);
+    }
+    .back {
+        transform: rotateY(180deg) translateZ(150px);
+    }
+    .right {
+        transform: rotateY(90deg) translateZ(150px);
+    }
+    .left {
+        transform: rotateY(-90deg) translateZ(150px);
+    }
+    .top {
+        transform: rotateX(90deg) translateZ(150px);
+    }
+    .bottom {
+        transform: rotateX(-90deg) translateZ(150px);
+    }
+    .box-side-img{
+        width:300px;
+        height:300px
+    }
+    .fa-brands{
+        font-size: 40px;
+
     }
 }
 
@@ -204,11 +239,12 @@
         top: 18px;
     }
     .box-container-main>div>h1 {
-        font-size: 56px;
+        font-size: 34px;
     }
 
     .box-container-main>div>h1>span {
-        font-size: 76px;
+        font-size: 72px;
+
     }
 
     #about-me-title>h1 {
@@ -229,6 +265,7 @@
         width: 220px;
         height: 220px;
     }
+
 }
 
 @media only screen and (max-width: 570px) {
@@ -239,12 +276,72 @@
     #skills h1 {
         font-size: 3em;
     }
-
-
+    /*Cube Styles until max-width: 570px*/
+    .cube-container {
+        width: 200px;
+        height: 200px;
+    }
+    .face {
+        width: 200px;
+        height: 200px;
+    }
+    .front {
+        transform: translateZ(100px);
+    }
+    .back {
+        transform: rotateY(180deg) translateZ(100px);
+    }
+    .right {
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .left {
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .top {
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    .bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+    .box-side-img{
+        width:200px;
+        height:200px
+    }
+    /*Gallery Styles until max-width: 570px*/
+    .box-gallery span
+    {
+        transform: rotateX(calc(var(--i) * 45deg)) translateZ(200px);
+    }
+    .box-gallery{
+        width: 165px;
+        height: 165px;
+    }
+    #contact-details{
+        position: relative;
+        top:150px;
+    }
+    #contact-header{
+        font-size: 50px;
+    }
+    .btn-contact{
+        font-size: 20px;
+    }
+    .box-container-main>div:nth-child(1)>p{
+        font-size: 15px;
+    }
+    .box-container-main > div > span {
+        position: relative;
+        left: 6px;
+    }
+    .box-container-main>div:nth-child(2) {
+        position: relative;
+        top: 10%;
+        left: 10px;
+    }
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 350px) and (max-width: 450px) {
     .logo {
         margin: 22px 30px 10px 0;
     }
@@ -273,4 +370,15 @@
     .box-container-main>div:nth-child(2) {
         left: 0;
     }
+    #contact-details{
+        position: relative;
+        top:150px;
+    }
+    #contact-header{
+        font-size: 40px;
+    }
+    .btn-contact{
+        font-size: 20px;
+    }
+
 }

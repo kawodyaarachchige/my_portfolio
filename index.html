@@ -6,9 +6,16 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/style/normalize.css" rel="stylesheet">
+
 </head>
 <body>
+
 <header>
     <nav>
         <img src="assets/images/logo.png" class="logo"/>
@@ -31,7 +38,9 @@
 <section id="main">
     <div class="box-container-main">
         <div class="box-main">
-            <div class="images box-hero">
+            <div class="images box-hero " data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
                 <div>
                     <img src="./assets/images/my.png" class="hero-img"/>
                 </div>
@@ -48,7 +57,7 @@
         <div class="box-main">
             <span class="title">Back End Developer</span><br>
             <h1>Hello, I’m <span>ThaRu Arachchige</span></h1><br>
-            <p id="hero-about">
+            <p id="hero-about" class=" animate__animated animate__headShake">
                 Empowering Solutions through Code and Creativity:<br>
                 I am a Software Developer, <br>Problem Solver, <br>and Designer...
             </p>
@@ -204,14 +213,9 @@
                     <h3>Assignment 01</h3>
                 </div>
                 <div class="second-content">
-                    <!--<div>
-                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
-                    </div>-->
+
                     <div class="buttons">
-                        <a href="">
-                            <button class="btn btn-primary">GitHub <a href="#" class="fa-brands fa-github fa-2xl"></a></button>
-                        </a>
-                        <a href="">
+                        <a href="https://drive.google.com/file/d/16ycctiyvRd0oNYYiG08kkEnHG2Wct1oH/view">
                             <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
                                                                       width="30" height="30"></button>
                         </a>
@@ -229,13 +233,9 @@
                         <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
                     </div>-->
                     <div class="buttons">
-                        <a href="">
+                        <a href="https://github.com/kawodyaarachchige/my_portfolio.git">
                             <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
                                                                         width="30" height="30"></button>
-                        </a>
-                        <a href="">
-                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
-                                                                      width="30" height="30"></button>
                         </a>
                     </div>
                 </div>
@@ -247,11 +247,65 @@
                     <h3>Assignment 03</h3>
                 </div>
                 <div class="second-content">
+                    <div class="buttons">
+                        <a href="https://github.com/kawodyaarachchige/css-assignment-03.git">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <a href="https://kawodyaarachchige.github.io/css-assignment-03/">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 04</h3>
+                </div>
+                <div class="second-content">
+                    <div class="buttons">
+                        <a href="https://github.com/kawodyaarachchige/css-assignment-04.git">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <a href="https://kawodyaarachchige.github.io/css-assignment-04/">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 05</h3>
+                </div>
+                <div class="second-content">
+                    <div class="buttons">
+                        <a href="https://github.com/kawodyaarachchige/my_portfolio.git">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <h4>This portfolio</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 07</h3>
+                </div>
+                <div class="second-content">
                     <!--<div>
                         <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
                     </div>-->
                     <div class="buttons">
-                        <a href="">
+                        <a href="https://github.com/kawodyaarachchige/BootStrap-POS.git">
                             <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
                                                                         width="30" height="30"></button>
                         </a>
@@ -266,14 +320,14 @@
         <div class="box-assignments hidden">
             <div class="card">
                 <div class="first-content">
-                    <h3>Assignment 04</h3>
+                    <h3>Assignment 08</h3>
                 </div>
                 <div class="second-content">
                     <!--<div>
                         <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
                     </div>-->
                     <div class="buttons">
-                        <a href="">
+                        <a href="https://github.com/kawodyaarachchige/css-assignment-08.git">
                             <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
                                                                         width="30" height="30"></button>
                         </a>
@@ -288,14 +342,14 @@
         <div class="box-assignments hidden">
             <div class="card">
                 <div class="first-content">
-                    <h3>Assignment 04</h3>
+                    <h3>Assignment 09</h3>
                 </div>
                 <div class="second-content">
                     <!--<div>
                         <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
                     </div>-->
                     <div class="buttons">
-                        <a href="">
+                        <a href="https://github.com/kawodyaarachchige/css-assigntment-09.git">
                             <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
                                                                         width="30" height="30"></button>
                         </a>
@@ -310,14 +364,58 @@
         <div class="box-assignments hidden">
             <div class="card">
                 <div class="first-content">
-                    <h3>Assignment 04</h3>
+                    <h3>Assignment 10</h3>
                 </div>
                 <div class="second-content">
                     <!--<div>
                         <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
                     </div>-->
                     <div class="buttons">
+                        <a href="https://github.com/kawodyaarachchige/BootStrap-POS.git">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
                         <a href="">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 11</h3>
+                </div>
+                <div class="second-content">
+                    <!--<div>
+                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+                    </div>-->
+                    <div class="buttons">
+                        <a href="https://github.com/kawodyaarachchige/BootStrap-POS.git">
+                            <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
+                                                                        width="30" height="30"></button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-primary">View <img src="assets/icons/icons8-cv-50.png" alt="view-page"
+                                                                      width="30" height="30"></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-assignments hidden">
+            <div class="card">
+                <div class="first-content">
+                    <h3>Assignment 06</h3>
+                </div>
+                <div class="second-content">
+                    <!--<div>
+                        <img src="assets/images/logo.png" title="assignments" alt="assignments" class="assignment-cover">
+                    </div>-->
+                    <div class="buttons">
+                        <a href="https://github.com/kawodyaarachchige/BootStrap-POS.git">
                             <button class="btn btn-primary">GitHub <img src="assets/icons/icons8-cv-50.png" alt="view-git"
                                                                         width="30" height="30"></button>
                         </a>
@@ -479,12 +577,20 @@
         </div>
         <!--  <div class="loader"></div>-->
     </div>
-    <div id="footer-div">
+</section>
+<footer id="footer" >
+    <div class="footer-text" >
         <p>Copyright © 2024 TharuArachchige All rights reserved.</p>
     </div>
-</section>
+</footer>
+
+
 
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/1eef1792c9.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

@@ -9,18 +9,14 @@
     position: absolute;
     z-index: 999;
 }
-#project-1 , #project-2 , #project-3{
+.projects{
     width: 100vw;
     height: 100vh;
     padding-top: 150px;
-
     text-align: center;
     justify-items: center;
-
     position: relative;
     top: -10px;
-
-
     background-color: black;
 }
 #box-container-project{
@@ -40,7 +36,7 @@
     color: #E6A3C2;
     font-weight: 100;
 }
-#project-1 , #project-2 , #project-3 p{
+.projects p{
     font-size: 18px;
     font-weight: 300;
     margin: 10px 0;

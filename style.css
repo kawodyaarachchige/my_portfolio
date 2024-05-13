@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
     --primary-color: #E6A3C2;
@@ -200,7 +201,7 @@ nav ul li a:hover:after {
     color: #fff;
 }
 .box-container-main>div>h1{
-    color: #5B213F;
+    color: #CA568E;
 
     margin: 10px 5px;
     font-size: 50px;
@@ -332,7 +333,7 @@ nav ul li a:hover:after {
 }
 
 #about-me-title>h1{
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1.2;
     color: #fe019a;
     font-weight: 100;
@@ -347,7 +348,7 @@ nav ul li a:hover:after {
     color: white;
 }
 #about h3 {
-    font-size: 26px;
+    font-size: 23px;
     margin-bottom: 10px;
     line-height:2.2;
     font-weight: 300;
@@ -362,7 +363,7 @@ nav ul li a:hover:after {
     color: white;
     line-height: 3.5rem;
     margin-bottom: 50px;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .buttons button {
@@ -602,11 +603,11 @@ nav ul li a:hover:after {
 }
 .box-assignments h3{
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 10px 20px;
     line-height:2.2;
     font-weight: 600;
-    color: black;
-    align-items: center;
+    color: rgba(91, 33, 63, 0.53);
+    align-items: end;
 }
 #assignments h1{
     font-size: 100px;
@@ -645,6 +646,7 @@ nav ul li a:hover:after {
     align-items: center;
     opacity: 1;
     border-radius: 15px;
+    background: url("assets/images/ass.jpg") no-repeat center center / cover;
 }
 .card:hover .first-content {
     height: 0;
@@ -946,7 +948,7 @@ div.item1:nth-of-type(5) {
 }
 #contact-details{
     position: relative;
-    top: 100px;
+    top: 300px;
 }
 #social-logos{
     display: flex;
@@ -1043,4 +1045,12 @@ div.item1:nth-of-type(5) {
     20%, 24%, 55% {
         text-shadow: none;
     }
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+
 }

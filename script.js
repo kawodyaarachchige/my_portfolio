@@ -16,30 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
-/*document.addEventListener("DOMContentLoaded", function() {
-    var landingPage = document.querySelector('.landing-page');
-    var mainContent = document.querySelector('main');
-
-    // Detect the end of the animation and show the main content
-    landingPage.addEventListener('animationend', function() {
-        showMainContent();
-    });*/
-
-/*    function showMainContent() {
-        // Hide the landing page and display the main content
-        landingPage.style.display = 'none';
-        mainContent.style.display = 'block';
-    }
-});*/
-const cursor = document.querySelector("#cursor");
+/*const cursor = document.querySelector("#cursor");
 document.addEventListener("mousemove", function (e){
     window.requestAnimationFrame(() => {
         cursor.style.top = `${e.clientY - cursor.offsetHeight/2}px`;
         cursor.style.left = `${e.clientX - cursor.offsetWidth/2}px`;
     });
-})
+})*/
 document.addEventListener('DOMContentLoaded', function() {
     // Select all images within .box-project
     const images = document.querySelectorAll('.fa-regular');
