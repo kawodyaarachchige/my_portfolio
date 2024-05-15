@@ -55,10 +55,9 @@
     .box-container-main>div>h1>span{
         font-size: 60px;
     }
-    .container-main>div:nth-child(1)>p {
-        font-size: 0.7em;
+    .box-container-main>div:nth-child(1)>p {
+        font-size: 13px;
     }
-
     #about{
         padding: 0 9%;
     }
@@ -104,7 +103,7 @@
     }
 
     .section-h1{
-        font-size: 50px;
+        font-size: 40px; !important;
     }
 
     .cube-container {
@@ -115,7 +114,12 @@
     .view-projects-btn {
         margin-top: 15rem;
     }
-
+    #skills h1{
+        font-size: 50px;
+    }
+    #assignments h1{
+        font-size: 50px;
+    }
     #blog h1 {
         font-size: 50px;
         margin: 60px;
@@ -128,11 +132,8 @@
     }
     #box-container-projects>div:nth-child(1) h1{
         font-size: 50px;}
+
 }
-
-
-
-
 @media only screen and (max-width: 991px) {
 
     #main {
@@ -146,7 +147,7 @@
     .box-container-main>div:nth-child(2) {
         position: relative;
         top: 24%;
-        left: 57px;
+        left: 20px;
     }
     .box-container-main>div>div:nth-child(1){
         width: 300px;
@@ -177,10 +178,9 @@
         margin: 23px;
 
     }
-    .box-container-main>div:nth-child(1)>p{
-        font-size: 15px;
+    .box-container-main>div:nth-child(1)>p {
+        font-size: 12px;
     }
-
     .box-container-social i{
         font-size: 2em;
     }
@@ -224,7 +224,6 @@
     }
     .fa-brands{
         font-size: 40px;
-
     }
 }
 
@@ -243,14 +242,15 @@
     }
 
     .box-container-main>div>h1>span {
-        font-size: 72px;
+        font-size: 56px;
 
     }
-
+    .box-container-social{
+        font-size: 18px;
+    }
     #about-me-title>h1 {
         font-size: 3.5rem;
     }
-
     .box-skills {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -270,7 +270,13 @@
 
 @media only screen and (max-width: 570px) {
     #about-me-title>h1 {
-        font-size: 3rem;
+        font-size: 30px;
+    }
+    #about p{
+        font-size: 18px;
+    }
+    #about h3{
+        font-size: 18px;
     }
 
     #skills h1 {
@@ -338,10 +344,16 @@
         top: 10%;
         left: 10px;
     }
+    .box-container-about>div{
+        position: relative;
+        top: 18px;
+
+    }
+
 
 }
 
-@media only screen and (min-width: 350px) and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
     .logo {
         margin: 22px 30px 10px 0;
     }
@@ -356,7 +368,7 @@
     }
     #about p {
         line-height: 2.5rem;
-        font-size: 20px;
+        font-size: 18px;
     }
     #about h3 {
         font-size: 21px;

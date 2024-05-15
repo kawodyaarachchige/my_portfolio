@@ -1,335 +1,240 @@
-.certificates {
-    width: 100vw;
-    height: auto;
-    text-align: center;
-    justify-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root{
+    --secondary-color: #E6A3C2;
+    --light-bg: #f8f8f8;
+    --light-card: #ebd7f1;
+    --font-family-default: "Poppins", sans-serif;
 }
-.certificates h1{
-    font-size: 50px;
-    line-height: 1.2;
-    color: #E6A3C2;
-    font-weight: 100;
-}
-.certificates h3{
-    font-size: 30px;
-    line-height: 1.2;
-    color: #E6A3C2;
-    font-weight: 80;
-    text-align: left;
-}
-.box-container-certificates {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background: radial-gradient(circle at top right, #e171a6, rgb(180, 58, 119),transparent 50%, transparent 100%) fixed !important;
+    background-color: #2d0019!important;
+    cursor: none;
 }
 
-.box-certificates{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    width: calc(33.33% - 20px);
+.cursor_outline{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var( --secondary-color);
+    background: linear-gradient(135deg, rgba(91, 33, 63, 0.53), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 2000;
+    pointer-events: none;
 }
-main.carousel {
-    grid-row: 1 / 2;
-    grid-column: 1 / 8;
-    width: 100vw;
-    height: 500px;
+main{
+    position: relative;
+}
+
+
+.heading_container{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.8s ease-in-out;
+}
+
+.header > h1{
+    color: var(--light-bg);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+    margin-bottom: 20px;
+}
+
+.header > p{
+    text-align: center;
+    text-decoration: none;
+    color: var(--light-bg);
+    font-size: 20px;
+}
+
+.header > p > a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.certificates_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 70px;
+}
+
+#certificates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+}
+
+.card {
+    position: relative;
+    width: 650px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transform-style: preserve-3d;
-    perspective: 600px;
-    --items: 5;
-    --middle: 3;
-    --position: 1;
-    pointer-events: none;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px var(  --secondary-color);
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-div.item {
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(229, 68, 151, 0.53);
+}
+
+.card_content {
     position: absolute;
-    width: 500px;
-    height: 380px;
-    border-radius: 15px;
-    --r: calc(var(--position) - var(--offset));
-    --abs: max(calc(var(--r) * -1), var(--r));
-    transition: all 0.25s linear;
-    transform: rotateY(calc(-10deg * var(--r)))
-    translateY(calc(-300px * var(--r)))
-    scale(calc(1 - 0.5 * var(--abs)));
-    z-index: calc((var(--position) - var(--abs)));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #030303;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 
-div.item:nth-of-type(1) {
-    --offset: 1;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item:nth-of-type(2) {
-    --offset: 2;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item:nth-of-type(3) {
-    --offset: 3;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item:nth-of-type(4) {
-    --offset: 4;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item:nth-of-type(5) {
-    --offset: 5;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
+.card_content ul li a{
+    text-decoration: none;
+    color: #8859B6;
+    font-size: 16px;
 }
 
-input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(1):checked ~ main#carousel1 {
-    --position: 1;
+.card:hover .card_content {
+    transform: rotateX(0deg);
 }
 
-input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(2):checked ~ main#carousel1 {
-    --position: 2;
-}
-
-input:nth-of-type(3) {
-    grid-column: 4 /5;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(3):checked ~ main#carousel1 {
-    --position: 3;
-}
-input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(4):checked ~ main#carousel1 {
-    --position: 4;
+.card_title {
+    margin: 0;
+    font-size: 20px;
+    color: #E6A3C2;
+    font-weight: 700;
 }
 
-input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(5):checked ~ main#carousel1{
-    --position: 5;
-}
-/*=======================================================================================*/
-div.item2 {
-    position: absolute;
-    width: 500px;
-    height: 380px;
-    border-radius: 15px;
-    --r: calc(var(--position) - var(--offset));
-    --abs: max(calc(var(--r) * -1), var(--r));
-    transition: all 0.25s linear;
-    transform: rotateY(calc(-10deg * var(--r)))
-    translateY(calc(-300px * var(--r)))
-    scale(calc(1 - 0.5 * var(--abs)));
-    z-index: calc((var(--position) - var(--abs)));
+.card:hover img {
+    scale: 0;
 }
 
-
-div.item2:nth-of-type(1) {
-    --offset: 1;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item2:nth-of-type(2) {
-    --offset: 2;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item2:nth-of-type(3) {
-    --offset: 3;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item2:nth-of-type(4) {
-    --offset: 4;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item2:nth-of-type(5) {
-    --offset: 5;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
+.card_description {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #E6A3C2;
+    line-height: 1.4;
 }
 
-input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(1):checked ~ main#carousel2 {
-    --position: 1;
-}
-
-input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(2):checked ~ main#carousel2 {
-    --position: 2;
+.card_button {
+    padding: 10px;
+    border-radius: 8px;
+    background: transparent;
+    color: #fd4766;
+    font-weight: 600;
+    border: 2px solid #fd4766;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px 10px 0 0;
 }
 
-input:nth-of-type(3) {
-    grid-column: 4 /5;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(3):checked ~ main#carousel2 {
-    --position: 3;
-}
-input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(4):checked ~ main#carousel2 {
-    --position: 4;
+.card_button:hover{
+    background: #5B213F;
+    color: #fd4766;
+    border: 2px solid #fd4766;
+    transform: scale(1.2);
 }
 
-input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
+.card_button:active{
+    transform: scale(0.9);
 }
-input:nth-of-type(5):checked ~ main#carousel2{
-    --position: 5;
-}
-/*=======================================================================================*/
-div.item3 {
-    position: absolute;
-    width: 500px;
-    height: 380px;
-    border-radius: 15px;
-    --r: calc(var(--position) - var(--offset));
-    --abs: max(calc(var(--r) * -1), var(--r));
-    transition: all 0.25s linear;
-    transform: rotateY(calc(-10deg * var(--r)))
-    translateY(calc(-300px * var(--r)))
-    scale(calc(1 - 0.5 * var(--abs)));
-    z-index: calc((var(--position) - var(--abs)));
-}
-
-
-div.item3:nth-of-type(1) {
-    --offset: 1;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item3:nth-of-type(2) {
-    --offset: 2;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item3:nth-of-type(3) {
-    --offset: 3;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item3:nth-of-type(4) {
-    --offset: 4;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-div.item3:nth-of-type(5) {
-    --offset: 5;
-    background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-ornamental-certificate_23-2148987062.jpg") center;
-    background-size: cover;
-}
-
-input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(1):checked ~ main#carousel3 {
-    --position: 1;
-}
-
-input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(2):checked ~ main#carousel3 {
-    --position: 2;
-}
-
-input:nth-of-type(3) {
-    grid-column: 4 /5;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(3):checked ~ main#carousel3 {
-    --position: 3;
-}
-input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(4):checked ~ main#carousel3 {
-    --position: 4;
-}
-
-input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(5):checked ~ main#carousel3 {
-    --position: 5;
-}
-
-@media screen and (max-width: 1450px) {
-    .box-container-certificates{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+@media all and (max-width: 1350px){
+    .certificates_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
     }
-    div.item3 ,div.item2 ,div.item {
-        width: 450px;
-        height: 300px;
-    }
-    .box-certificates{
-        position: relative;
-        width: 100vw;
-        margin: 0;
+
+    .card {
+        width: 500px;
     }
 }
-@media screen and (max-width: 900px) {
-    .box-container-certificates{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+
+@media all and (max-width: 1150px){
+
+    .certificates_container{
+        grid-template-columns: repeat(1,1fr);
     }
-    div.item3 ,div.item2 ,div.item {
+}
+
+@media all and (max-width: 950px){
+    .cursor_outline{
+        display: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    .heading_container{
+        height: 20vh;
+    }
+
+    .header > h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .header > p{
+        font-size: 16px;
+    }
+
+    .certificates_container{
+        grid-template-columns: 1fr;
+    }
+    .card {
         width: 350px;
-        height: 200px;
+        height: 300px;
+
     }
-    .box-certificates{
-        position: relative;
-        width: 100vw;
-        margin: 0;
+}
+
+
+@media all and (max-width: 470px){
+
+    .heading_container{
+        height: 20vh;
     }
-    .certificates h1{
-        font-size: 30px;
-        line-height: 1.2;
-        color: #E6A3C2;
-        font-weight: 100;
+
+    .header > h1{
+        font-size: 40px;
+        line-height: 40px;
     }
-    .certificates h3{
-        font-size: 20px;
-        line-height: 1.2;
-        color: #E6A3C2;
-        font-weight: 80;
-        text-align: left;
+
+    .header > p{
+        font-size: 14px;
     }
+
+    .card {
+        width: 150px;
+
+    }
+
 }

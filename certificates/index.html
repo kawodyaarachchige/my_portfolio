@@ -4,60 +4,230 @@
     <meta charset="UTF-8">
     <title>Certificates</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../assets/style/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="certificates">
-    <h1>My Certificates</h1>
-    <div class="box-container-certificates">
-        <div class="box-certificates">
-            <h3>ICT</h3>
-            <input type="radio" name="position" checked />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <main id="carousel1" class="carousel">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-            </main>
+<div class="cursor_outline"></div>
+<main>
+    <section class="heading_container">
+        <div class="header">
+            <h1>My Certificates</h1>
+            <p>
+                <a href="../index.html">home</a>
+            </p>
         </div>
-        <!-- Repeat the above block for other certificates -->
-        <div class="box-certificates">
-            <h3>Sports</h3>
-            <input type="radio" name="position" checked />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <main id="carousel2" class="carousel">
-                <div class="item2"></div>
-                <div class="item2"></div>
-                <div class="item2"></div>
-                <div class="item2"></div>
-                <div class="item2"></div>
-            </main>
-        </div>
-        <div class="box-certificates">
-            <h3>Others</h3>
-            <input type="radio" name="position" checked />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <main id="carousel3" class="carousel">
-                <div class="item3"></div>
-                <div class="item3"></div>
-                <div class="item3"></div>
-                <div class="item3"></div>
-                <div class="item3"></div>
-            </main>
-        </div>
-    </div>
-</section>
+    </section>
+    <section id="certificates">
+        <div class="certificates_container">
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c1.png" alt="certificate1">
+                <div class="card_content">
+                    <p class="card_title">Business Analysis & Process Management</p>
+                    <p class="card_description">Analyze business processes and find solutions to existing business
+                        problems & valuate the current business from a process view, break down the problems, and find
+                        an applicable business solution.</p>
+                    <a href="https://coursera.org/share/5dd05d5261fd3ab428348d9945d17a1f">
+                        <button class="card_button">Coursera</button>
+                    </a>
+                </div>
+            </div>
 
-<script src="script.js"></script>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c2.png" alt="certificate2">
+                <div class="card_content">
+                    <p class="card_title">Python (Basic)</p>
+                    <p class="card_description">It covers topics like Scalar Types, Operators and Control Flow, Strings,
+                        Collections and Iteration, Modularity, Objects and Types and Classes</p>
+                    <a href="https://www.hackerrank.com/certificates/c50c28ee638a">
+                        <button class="card_button">HackerRank</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c7.png" alt="certificate7">
+                <div class="card_content">
+                    <p class="card_title">CSS (Basic)</p>
+                    <p class="card_description">
+                        It covers topics like exploring Cascading and Inheritance, exploring text styling fundamentals,
+                        understanding the use of layouts in CSS, understand the boxing of elements in CSS, among others.
+                    </p>
+                    <a href="https://www.hackerrank.com/certificates/882004ac0a9e">
+                        <button class="card_button">HackerRank</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c8.png" alt="assignment">
+                <div class="card_content">
+                    <p class="card_title">Java (Basic)</p>
+                    <p class="card_description">
+                        It will cover basic topics in Java language such as classes, data structures, inheritance,
+                        exception handling, etc.
+                        You are expected to be proficient in either Java 7 or Java 8.
+                    </p>
+                    <a href="https://www.hackerrank.com/certificates/960c86e05cb3">
+                        <button class="card_button">HackerRank</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c9.png" alt="assignment">
+                <div class="card_content">
+                    <p class="card_title">Problem Solving (Basic)</p>
+                    <p class="card_description">
+                        It covers basic topics of Data Structures (such as Arrays, Strings) and
+                        Algorithms (such as Sorting and Searching).
+                    </p>
+                    <a href="https://www.hackerrank.com/certificates/c5a89263ae82">
+                        <button class="card_button">HackerRank</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c11.png" alt="assignment">
+                <div class="card_content">
+                    <p class="card_title">SQL (Basic)</p>
+                    <p class="card_description">
+                        It includes simple queries, relationships, and aggregators.
+                    </p>
+                    <a href="https://www.hackerrank.com/certificates/559d2cef230f">
+                        <button class="card_button">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c12.png" alt="assignment">
+                <div class="card_content">
+                    <p class="card_title">SQL (Intermediate)</p>
+                    <p class="card_description">
+                        It includes complex joins, unions, and sub-queries.
+                    </p>
+                    <a href="https://www.hackerrank.com/certificates/77378aaaa610">
+                        <button class="card_button">HackerRank</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c10.png" alt="assignment">
+                <div class="card_content">
+                    <p class="card_title">SQL (Advanced)</p>
+                    <p class="card_description">
+                        It covers topics like query optimization, data modeling, Indexing, window functions,
+                        and pivots in SQL
+                    </p>
+                    <a href="https://www.hackerrank.com/certificates/5281a67a9377">
+                        <button class="card_button">HackerRank</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c3.png" alt="certificate3">
+                <div class="card_content">
+                    <p class="card_title">Assignment 03</p>
+                    <p class="card_description">
+                        The assignment that based on css styling and positioning. There are 6 cases in this assignment.
+                    </p>
+                    <a href="https://github.com/viniduminsara/IT_Assignment_03">
+                        <button class="card_button">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c4.png" alt="certificate4">
+                <div class="card_content">
+                    <p class="card_title">Assignment 04</p>
+                    <p class="card_description">
+                        The assignment that based on css animation. There are 6 cases in this assignment.
+                    </p>
+                    <a href="https://github.com/viniduminsara/IT_Assignment_04">
+                        <button class="card_button">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c5.jpg" alt="certificate5">
+                <div class="card_content">
+                    <p class="card_title">Introduction to C</p>
+                    <a href="https://github.com/viniduminsara/My_Portfolio/tree/styles">
+                        <button class="card_button">Sololeran</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c6.jpg" alt="certificate6">
+                <div class="card_content">
+                    <p class="card_title">Python Developer</p>
+                    <a href="https://github.com/viniduminsara/IT_Assignment_06">
+                        <button class="card_button">Sololearn</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c13.png" alt="certificate6">
+                <div class="card_content">
+                    <p class="card_title">Introduction to Java</p>
+                    <a href="https://github.com/viniduminsara/IT_Assignment_06">
+                        <button class="card_button">Sololearn</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c14.png" alt="certificate6">
+                <div class="card_content">
+                    <p class="card_title">Java Intermediate</p>
+                    <a href="https://github.com/viniduminsara/IT_Assignment_06">
+                        <button class="card_button">Sololearn</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c15.png" alt="certificate6">
+                <div class="card_content">
+                    <p class="card_title">Introduction to SQL</p>
+                    <a href="https://github.com/viniduminsara/IT_Assignment_06">
+                        <button class="card_button">Sololearn</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c16.png" alt="certificate6">
+                <div class="card_content">
+                    <p class="card_title">Introduction to Gen AI Studio with Google Cloud</p>
+                    <p class="card_description">
+                        This course introduces Generative AI Studio, a product on Vertex AI, that allows prototype and
+                        customize generative AI
+                        models.
+                    </p>
+                    <a href="confirm.udacity.com/e/a0f73c2e-d1a4-11ee-96d9-57f06079e233">
+                        <button class="card_button">UDACITY</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/certificatesGal/c17.png" alt="certificate6">
+                <div class="card_content">
+                    <p class="card_title"> Introduction to Generative AI with Google Cloud</p>
+                    <p class="card_description">
+                        This is an introductory level microlearning course aimed at explaining what Generative AI is,
+                        how it is used, and how
+                        it differs from traditional machine learning methods.
+                    </p>
+                    <a href="confirm.udacity.com/e/d33b20a0-d0f1-11ee-b7fb-7f1f2c05b880">
+                        <button class="card_button">UDACITY</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="../script.js"></script>
 </body>
 </html>

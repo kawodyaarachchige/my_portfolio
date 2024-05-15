@@ -70,7 +70,10 @@
     top: 10px;
     width: 100px;
     height: 50px;
-
+}
+.projects-cover{
+    width: 700px;
+    height: 350px;
 }
 
 @media screen and (max-width: 1200px){
@@ -89,8 +92,10 @@
         margin: 15px 0;
         color: white;
     }
-    .box-project > img{
+}
+@media screen and (max-width: 768px){
+    .projects-cover{
         width: 300px;
-        height: 350px;
+        height: 150px;
     }
 }

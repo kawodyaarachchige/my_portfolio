@@ -16,13 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-/*const cursor = document.querySelector("#cursor");
-document.addEventListener("mousemove", function (e){
-    window.requestAnimationFrame(() => {
-        cursor.style.top = `${e.clientY - cursor.offsetHeight/2}px`;
-        cursor.style.left = `${e.clientX - cursor.offsetWidth/2}px`;
-    });
-})*/
+//cursor
+const cursor = document.querySelector('.cursor_outline');
+
+window.addEventListener('mousemove', (e) =>{
+
+    let posX = e.clientX;
+    let posY = e.clientY;
+
+    cursor.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+    }, {duration: 400, fill: 'forwards'});
+
+});
 document.addEventListener('DOMContentLoaded', function() {
     // Select all images within .box-project
     const images = document.querySelectorAll('.fa-regular');
@@ -67,3 +74,4 @@ const observer=new IntersectionObserver((entries)=>{
 })
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e1)=>observer.observe(e1));
+
