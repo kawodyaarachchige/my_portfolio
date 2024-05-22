@@ -349,6 +349,15 @@
         top: 18px;
 
     }
+    .cube h2{
+        position: relative;top: 40px;
+        text-align: center;
+        font-size: 10px;
+        font-family: "Poppins", sans-serif;
+    }
+    #hobbies p{
+       font-size: 14px;line-height: 1.7
+    }
 
 
 }
@@ -391,6 +400,15 @@
     }
     .btn-contact{
         font-size: 20px;
+    }
+    .cube h2{
+        position: relative;top: 20px;
+        text-align: center;
+        font-size: 10px;
+        font-family: "Poppins", sans-serif;
+    }
+    #hobbies p{
+        font-size: 13px;line-height: 1.7
     }
 
 }

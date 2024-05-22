@@ -47,13 +47,12 @@ section{
     height: fit-content!important;
     min-height: 110vh;
 }
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    padding: 3px 30px;
+    padding: 0 2px 0 2px;
     text-decoration: none;
     position: fixed;
     top: 0;
@@ -65,7 +64,7 @@ nav {
 .logo {
     max-height: 80px;
     width: auto;
-    margin: 22px 30px 10px 50px;
+    margin: 22px 30px 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,25 +251,6 @@ nav ul li a:hover:after {
 .fa-brands:hover{
     color: rgba(91, 33, 63, 0.53);
 }
-
-/*@keyframes rotateBorder {
-    0% {
-        background-color: #2B0E1E
-    }
-    25% {
-        border: 2px solid rgba(91, 33, 63, 0.53)
-    }
-    50% {
-        border: 3px solid rgba(248, 86, 114, 0.41);
-    }
-    75% {
-        border: 4px solid #5B213F;
-    }
-    100% {
-        border: 5px solid #5B213F;
-    }
-}*/
-
 #about{
     height: fit-content;
     min-height: 100vh;
@@ -648,7 +628,7 @@ nav ul li a:hover:after {
     /*box-shadow: 0px 0px 10px 5px  var(--primary-color);*/
     font-size: 30px;
     font-weight: 900;
-    padding: 3px;
+    padding: 6px;
 }
 .card:hover {
     border-radius: 15px;
@@ -656,6 +636,7 @@ nav ul li a:hover:after {
     transform: scale(1.2);
     /*box-shadow: 0px 0px 10px 5px  var(--secondary-color);*/
     background: var(--secondary-color);
+    padding: 0;
 }
 .first-content {
     height: 100%;
@@ -665,16 +646,19 @@ nav ul li a:hover:after {
     justify-content: center;
     align-items: center;
     opacity: 1;
+
     border-radius: 15px;
     background: url("assets/images/ass.jpg") no-repeat center center / cover;
 }
 .card:hover .first-content {
     height: 0;
     opacity: 0;
+    padding: 0;
 }
 .second-content {
     height: 0%;
     width: 100%;
+
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -791,13 +775,8 @@ nav ul li a:hover:after {
     margin: 50px;
     animation: flicker 1.5s infinite alternate;
 }
-#hobbies h3,li{
-    position: relative;
-    left: 60px;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
+#hobbies p{
+    color: #fcfbfb ;font-size: 20px;line-height: 1.6
 }
 #blogs-img{
     position: relative;
@@ -961,8 +940,6 @@ div.item1:nth-of-type(5) {
 #contact{
     text-align: center;
     min-height: 100vh;
-    /*background: url("assets/images/footer.JPEG") center; background-size: cover;lazyload: true;background-attachment: fixed;*/
-    /*backdrop-filter: blur(20%);*/
 }
 
 #contact-header{
@@ -989,10 +966,6 @@ div.item1:nth-of-type(5) {
     position: relative;
     text-align: left;
 }
-/*#social-logos>div>a{*/
-/*    position: relative;*/
-/*    text-align: center;*/
-/*}*/
 #contact-details .fa-brands{
     font-size: 30px;
     color: rgb(235,209,151);
@@ -1078,3 +1051,21 @@ footer{
 #footer{
     justify-content: center;
 }
+
+/*@keyframes rotateBorder {
+    0% {
+        background-color: #2B0E1E
+    }
+    25% {
+        border: 2px solid rgba(91, 33, 63, 0.53)
+    }
+    50% {
+        border: 3px solid rgba(248, 86, 114, 0.41);
+    }
+    75% {
+        border: 4px solid #5B213F;
+    }
+    100% {
+        border: 5px solid #5B213F;
+    }
+}*/
