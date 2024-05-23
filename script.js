@@ -1,3 +1,5 @@
+
+// navbar
 document.addEventListener("DOMContentLoaded", function () {
     const hamburgerMenu = document.querySelector(".hamburger-menu");
     const navLinks = document.querySelector(".nav-links");
@@ -30,6 +32,8 @@ window.addEventListener('mousemove', (e) =>{
     }, {duration: 400, fill: 'forwards'});
 
 });
+
+//project slider
 document.addEventListener('DOMContentLoaded', function() {
     // Select all images within .box-project
     const images = document.querySelectorAll('.fa-regular');
@@ -72,6 +76,28 @@ const observer=new IntersectionObserver((entries)=>{
         }
     })
 })
+//background star animation
 const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((e1)=>observer.observe(e1));
+hiddenElements.forEach((el) => observer.observe(el));
+
+const particleContainer = document.querySelector('.particles');
+const starBackground = document.querySelector('.star-background');
+
+for (let i = 0; i < 100; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    particle.style.top = `${Math.random() * 100}vh`;
+    particle.style.left = `${Math.random() * 100}vw`;
+    particle.style.animationDelay = `${Math.random() * 10}s`;
+    particleContainer.appendChild(particle);
+}
+
+for (let i = 0; i < 300; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = `${Math.random() * 100}vh`;
+    star.style.left = `${Math.random() * 100}vw`;
+    starBackground.appendChild(star);
+}
+
 

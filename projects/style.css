@@ -1,3 +1,5 @@
+
+
 *{
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
@@ -17,7 +19,8 @@
     justify-items: center;
     position: relative;
     top: -10px;
-    background-color: black;
+    background: radial-gradient(circle at top right, #e171a6, rgb(180, 58, 119),transparent 50%, transparent 100%) fixed !important;
+    background-color: #2d0019!important;
 }
 #box-container-project{
     display: grid;
