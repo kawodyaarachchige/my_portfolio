@@ -609,7 +609,7 @@ nav ul li a:hover:after {
     margin: 10px 20px;
     line-height:2.2;
     font-weight: 600;
-    color: rgba(91, 33, 63, 0.53);
+    color: rgb(252, 251, 251);
     align-items: end;
 }
 #assignments h1{
@@ -627,11 +627,12 @@ nav ul li a:hover:after {
     height: 100%;
     background: var(--primary-color);
     transition: all 0.4s;
-    border-radius: 10px;
+    border-radius: 5px;
     /*box-shadow: 0px 0px 10px 5px  var(--primary-color);*/
     font-size: 30px;
     font-weight: 900;
-    padding: 6px;
+    padding: 2px;
+
 }
 .card:hover {
     border-radius: 15px;
@@ -651,7 +652,7 @@ nav ul li a:hover:after {
     opacity: 1;
 
     border-radius: 15px;
-    background: url("assets/images/ass.jpg") no-repeat center center / cover;
+    background: url("assets/images/projectsgal/back.png") no-repeat center center / cover;
 }
 .card:hover .first-content {
     height: 0;
