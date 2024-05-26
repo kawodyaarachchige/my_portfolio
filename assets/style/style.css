@@ -652,7 +652,7 @@ nav ul li a:hover:after {
     opacity: 1;
 
     border-radius: 15px;
-    background: url("assets/images/projectsgal/back.png") no-repeat center center / cover;
+    background: url("../images/projectsgal/back.png") no-repeat center center / cover;
 }
 .card:hover .first-content {
     height: 0;
@@ -826,27 +826,27 @@ div.item1 {
 }
 div.item1:nth-of-type(1) {
     --offset: 1;
-    background: url("assets/images/background.jpg") center;
+    background: url("../images/illustration/i1.jpg");
     background-size: cover;
 }
 div.item1:nth-of-type(2) {
     --offset: 2;
-    background: url("assets/images/background.jpg") center;
+    background: url("../images/illustration/i2.jpg");
     background-size: cover;
 }
 div.item1:nth-of-type(3) {
     --offset: 3;
-    background: url("assets/images/background.jpg") center;
+    background: url("../images/illustration/i8.jpg");
     background-size: cover;
 }
 div.item1:nth-of-type(4) {
     --offset: 4;
-    background: url("assets/images/background.jpg") center;
+    background: url("../images/illustration/img7.jpg");
     background-size: cover;
 }
 div.item1:nth-of-type(5) {
     --offset: 5;
-    background: url("assets/images/background.jpg") center;
+    background: url("../images/illustration/i4.jpg");
     background-size: cover;
 }
 
