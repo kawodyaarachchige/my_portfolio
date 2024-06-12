@@ -363,6 +363,13 @@
 }
 
 @media only screen and (max-width: 450px) {
+    section{  background: radial-gradient(circle at top right, #e171a6, rgb(180, 58, 119),transparent 50%, transparent 100%) fixed !important;
+        background-color: #2d0019!important;}
+
+    .my-img{
+        width: 150px;
+        height: 180px;
+    }
     .logo {
         margin: 22px 30px 10px 0;
     }
