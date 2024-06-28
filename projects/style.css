@@ -41,7 +41,6 @@ main{
     margin-bottom: 20px;
     font-family: var(--font-family-default);
 }
-
 .header > p{
     text-align: center;
     text-decoration: none;
@@ -51,7 +50,7 @@ main{
 
 .header > p > a{
     text-decoration: none;
-    color: var(--secondary-color);
+    color: white;
 }
 .projects{
     margin-top: 100px;

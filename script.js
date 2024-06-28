@@ -101,3 +101,9 @@ for (let i = 0; i < 300; i++) {
 }
 
 
+setTimeout(function() {
+    document.getElementById("loading-page").className += "loaded";
+    document.getElementById("loader").className += "opzero";
+    document.getElementById("lastray").className += " finalray";
+    document.body.className += "whitebk";
+},6500);

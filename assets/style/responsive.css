@@ -157,7 +157,7 @@
     }
     .box-container-main>.box-main>.images>div>img {
         background-color: transparent;
-        width: 300px;
+        width: 270px;
         height: 370px;
         animation: rotateBorder 10s linear infinite;
     }
