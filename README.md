@@ -20,6 +20,46 @@ This project is built using the following technologies:
 - **Connect through social platforms:** Links to my social media profiles.
 - **Responsive design:** Seamless browsing on any device, from smartphones to desktops.
 
+<hr>
+
+  ![App Screenshot](https://imgur.com/9Q8R1dV.png)
+  
+<hr>
+
+  ![App Screenshot](https://imgur.com/YOvmbHH.png)
+  <hr>
+  
+  ![App Screenshot](https://imgur.com/mJCAv3Y.png)
+    <hr>
+ ![App Screenshot](https://imgur.com/MuDrbUU.png)
+       <hr>
+ ![App Screenshot](https://imgur.com/OTVUN8i.png)
+          <hr>
+ ![App Screenshot](https://imgur.com/fTco4dI.png)
+          <hr>
+ ![App Screenshot](https://imgur.com/NlQwR74.png)
+
+ <hr>
+ 
+  ![App Screenshot](https://imgur.com/COYLMGU.png)
+
+  <hr>
+
+   ![App Screenshot](https://imgur.com/WxvrCfk.png)
+
+  <hr>
+
+   ![App Screenshot](https://imgur.com/bsg2nf0.png)
+
+ <hr>
+
+   ![App Screenshot](https://imgur.com/ytSMh3n.png)
+ 
+
+  
+
+   
+    
 
 ### License 🔐
 
